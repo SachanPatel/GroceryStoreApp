@@ -1,0 +1,58 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .camera-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #video {
+    width: 320px;
+    height: 240px;
+    border: 2px solid #ccc;
+  }
+  
+  #captured-image {
+    width: 320px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+  }
+  
+  .preferences,
+  .previous-dishes {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  #submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  #result {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .recipe {
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  

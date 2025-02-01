@@ -1,0 +1,54 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery Store Ingredient Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Grocery Store Ingredient Scanner</h1>
+
+  <!-- Camera Section -->
+  <div class="camera-container">
+    <video id="video" autoplay></video>
+    <button id="capture-btn">Capture Image</button>
+    <!-- Hidden canvas used to capture image from video -->
+    <canvas id="canvas" style="display:none;"></canvas>
+    <!-- Display the captured image -->
+    <img id="captured-image" alt="Captured Image" />
+  </div>
+
+  <!-- Cuisine Preferences -->
+  <div class="preferences">
+    <h2>Select Your Preferred Cuisines</h2>
+    <form id="preferences-form">
+      <label><input type="checkbox" name="cuisines" value="Indian"> Indian</label>
+      <label><input type="checkbox" name="cuisines" value="Japanese"> Japanese</label>
+      <label><input type="checkbox" name="cuisines" value="Chinese"> Chinese</label>
+      <label><input type="checkbox" name="cuisines" value="Mexican"> Mexican</label>
+      <label><input type="checkbox" name="cuisines" value="American"> American</label>
+      <label><input type="checkbox" name="cuisines" value="Italian"> Italian</label>
+      <label><input type="checkbox" name="cuisines" value="Spanish"> Spanish</label>
+      <label><input type="checkbox" name="cuisines" value="Mediterranean"> Mediterranean</label>
+    </form>
+  </div>
+
+  <!-- Previous Dishes Input -->
+  <div class="previous-dishes">
+    <h2>Enter Dishes You Have Cooked Before</h2>
+    <textarea id="previous-dishes" placeholder="List your dishes, separated by commas"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <button id="submit-btn">Submit for Analysis</button>
+
+  <!-- Display Recipe Suggestions -->
+  <div id="result">
+    <h2>Recipe Suggestions:</h2>
+    <div id="recipe-results"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
